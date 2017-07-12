@@ -1,0 +1,58 @@
+@mixin circle($size, $radius){
+	width:$size;
+	height:$size;
+	border-radius:$radius;
+}
+
+
+// colors variable
+$black:black;
+$green:green;
+$white:#fff;
+$primary-color:purple;
+
+
+
+// fonts variable
+$standardFont:12px;
+$h-oneFont:40px;
+
+
+//radius variables
+$radius-normal:2px;
+
+
+body {
+    margin:0px;
+	padding:0px;
+  }
+.parent {
+   padding-left: 0px!important;
+  }
+ .navbar-nav-menu{
+   display: none;
+   }
+
+
+ .div{
+  width: 40%;
+  background-color: $green;
+  height:auto;
+  padding-top: 10px;
+  min-height: 40px;
+  padding-bottom: 10px;
+}
+ .dropdown-select li {
+  color: $white;
+  display: inline-block;
+  background-color: $black;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: $radius-normal;
+ }
+.dropdown-select{
+	border-radius:$radius-normal;
+}
