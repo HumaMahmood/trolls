@@ -1,4 +1,3 @@
-testing browser changes
 testing local conflict
 This is my first filess
 checking conflict
