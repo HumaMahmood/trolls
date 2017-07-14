@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!-- <script src="js/index.js"></script> -->
+  <script src="js/index.js"></script> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -38,60 +38,60 @@
 </div>
 <script>
 
-$(document).ready(function () {
-  var a = $('.dropdown-lists');
-$(".div").click(function(){
-    $(".navbar-nav-menu").show();
-  });
+// $(document).ready(function () {
+//   var a = $('.dropdown-lists');
+// $(".div").click(function(){
+//     $(".navbar-nav-menu").show();
+//   });
 
 
 
-  $("label").on('click', function(e) {
-  e.preventDefault(); 
+//   $("label").on('click', function(e) {
+//   e.preventDefault(); 
  
-  var indexul =$( this ).parent().index();
-  for (var i=0; i<=a.length+1; i++) {
-    if(indexul== i){
-      $(this).siblings().addClass('selected-ul'+'' +i);
-  }
-  }
+//   var indexul =$( this ).parent().index();
+//   for (var i=0; i<=a.length+1; i++) {
+//     if(indexul== i){
+//       $(this).siblings().addClass('selected-ul'+'' +i);
+//   }
+//   }
 
-    $('.dropdown-select').append($(this).siblings("li"));
+//     $('.dropdown-select').append($(this).siblings("li"));
  
-});
+// });
 
 
 
 
-$('body').on('click', 'li', function() {
-  var $thisval = $(this);
-  var className = $(this).attr('class');
-  if($(this).parent().hasClass('dropdown-select')){
-    $( ".dropdown-lists ul" ).each(function( index ){
-    if('selected-ul'+index == className){
-      $(this).append($thisval);
-  }
-});
+// $('body').on('click', 'li', function() {
+//   var $thisval = $(this);
+//   var className = $(this).attr('class');
+//   if($(this).parent().hasClass('dropdown-select')){
+//     $( ".dropdown-lists ul" ).each(function( index ){
+//     if('selected-ul'+index == className){
+//       $(this).append($thisval);
+//   }
+// });
 
 
-}
-else
-{
-  var indexul =$( this ).parent().index();
-  for (var i=0; i<=a.length+1; i++) {
-    if(indexul== i){
-      $(this).siblings().addClass('selected-ul'+'' +i);
-  }
-  }
+// }
+// else
+// {
+//   var indexul =$( this ).parent().index();
+//   for (var i=0; i<=a.length+1; i++) {
+//     if(indexul== i){
+//       $(this).siblings().addClass('selected-ul'+'' +i);
+//   }
+//   }
 
-    $('.dropdown-select').append($(this).siblings("li"));
-}
+//     $('.dropdown-select').append($(this).siblings("li"));
+// }
 
-});
+// });
 
 
 
-  });// ready function
+//   });// ready function
 </script>
 </body>
 </html>
