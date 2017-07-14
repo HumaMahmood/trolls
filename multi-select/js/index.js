@@ -1,35 +1,35 @@
-$(document).ready(function () {
-  var a = $('.dropdown-lists');
-$(".div").click(function(){
-    $(".navbar-nav-menu").show();
+jQuery(document).ready(function () {
+  var a = jQuery('.dropdown-lists');
+jQuery(".div").click(function(){
+    jQuery(".navbar-nav-menu").show();
   });
 
 
 
-  $("label").on('click', function(e) {
+  jQuery("label").on('click', function(e) {
   e.preventDefault(); 
  
-  var indexul =$( this ).parent().index();
+  var indexul =jQuery( this ).parent().index();
   for (var i=0; i<=a.length+1; i++) {
     if(indexul== i){
-      $(this).siblings().addClass('selected-ul'+'' +i);
+      jQuery(this).siblings().addClass('selected-ul'+'' +i);
   }
   }
 
-    $('.dropdown-select').append($(this).siblings("li"));
+    jQuery('.dropdown-select').append(jQuery(this).siblings("li"));
  
 });
 
 
 
 
-$('body').on('click', 'li', function() {
-  var $thisval = $(this);
-  var className = $(this).attr('class');
-  if($(this).parent().hasClass('dropdown-select')){
-    $( ".dropdown-lists ul" ).each(function( index ){
+jQuery('body').on('click', 'li', function() {
+  var $thisval = jQuery(this);
+  var className = jQuery(this).attr('class');
+  if(jQuery(this).parent().hasClass('dropdown-select')){
+    jQuery( ".dropdown-lists ul" ).each(function( index ){
     if('selected-ul'+index == className){
-      $(this).append($thisval);
+      jQuery(this).append($thisval);
   }
 });
 
@@ -37,14 +37,14 @@ $('body').on('click', 'li', function() {
 }
 else
 {
-  var indexul =$( this ).parent().index();
+  var indexul =jQuery( this ).parent().index();
   for (var i=0; i<=a.length+1; i++) {
     if(indexul== i){
-      $(this).siblings().addClass('selected-ul'+'' +i);
+      jQuery(this).siblings().addClass('selected-ul'+'' +i);
   }
   }
 
-    $('.dropdown-select').append($(this).siblings("li"));
+    jQuery('.dropdown-select').append(jQuery(this).siblings("li"));
 }
 
 });
