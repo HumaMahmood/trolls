@@ -56,6 +56,3 @@ $('body').on('click', 'li', function() {
 
 });
 });// ready function
-
-
-// i have made changes on local too.
