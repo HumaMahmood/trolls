@@ -57,5 +57,5 @@ $('body').on('click', 'li', function() {
 });
 });// ready function
 // now add your chnages
-
+//lines from browser
 //added lines on local
