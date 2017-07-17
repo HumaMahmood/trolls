@@ -32,7 +32,8 @@ $('body').on('click', 'li', function() {
     $( ".dropdown-lists ul" ).each(function( index ){
     if('selected-ul'+index == className){
      
-      if(!$(".selected-ul").parent().hasClass("labelAll")){
+     
+      if($(".selected-ul").parent().find("labelAll").length == 0){
           $(".selected-ul").parent().append("<label class='labelAll'>hello</label>");
      } 
      $(this).append($thisval);
