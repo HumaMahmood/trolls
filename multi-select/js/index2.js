@@ -5,7 +5,7 @@ $(document).ready(function () {
 $(".custom-dropdown-list").click(function(){
     $(".navbar-nav-menu").toggle();
   });
-
+$("ul label").addClass("labelAll");
 
 /////////////
   $("label").on('click', function(e) {
@@ -32,6 +32,9 @@ $('body').on('click', 'li', function() {
     $( ".dropdown-lists ul" ).each(function( index ){
     if('selected-ul'+index == className){
       $(this).append($thisval);
+      if(!$(this).parent().hasClass("labelAll")){
+          $(this).append("<label class='labelAll'>hello</label>");
+     }
   }
 });
 }
