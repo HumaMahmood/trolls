@@ -33,7 +33,8 @@ $('body').on('click', 'li', function() {
     if('selected-ul'+index == className){
      
      
-      if($(this).parent().find("labelAll").length == 0){
+      if($(this).parent().find(".labelAll").length < 1 ){
+        console.log("Label not found");
           $(this).parent().append("<label class='labelAll'>hello</label>");
      } 
      $(this).append($thisval);
