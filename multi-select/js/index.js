@@ -12,7 +12,7 @@
  $("label").on('click', function(e) {
  e.preventDefault(); 
 var index =$( this ).parent().index();
-console.log("index is:" + index);
+alert("index is:" + index);
   if($(this).parent().hasClass('first')){
     $(this).siblings("li").addClass('selected1');
   }
