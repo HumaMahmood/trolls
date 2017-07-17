@@ -31,10 +31,11 @@ $('body').on('click', 'li', function() {
   if($(this).parent().hasClass('dropdown-select')){
     $( ".dropdown-lists ul" ).each(function( index ){
     if('selected-ul'+index == className){
-      $(this).append($thisval);
-      if(!$(this).parent().hasClass("labelAll")){
-          $(this).append("<label class='labelAll'>hello</label>");
-     }
+     
+      if(!$(".selected-ul").parent().hasClass("labelAll")){
+          $(".selected-ul").parent().append("<label class='labelAll'>hello</label>");
+     } 
+     $(this).append($thisval);
   }
 });
 }
