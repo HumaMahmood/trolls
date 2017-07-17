@@ -57,9 +57,3 @@ $('body').on('click', 'li', function() {
 });
 });// ready function
 // now add your chnages
-<<<<<<< HEAD
-=======
-//lines from browser
-//added lines on local
-//changed file i browser too
->>>>>>> ace63420a7ebd289b32fb9a4c6c3c254bff4d727
